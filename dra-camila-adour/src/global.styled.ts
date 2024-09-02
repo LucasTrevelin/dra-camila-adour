@@ -41,7 +41,8 @@ export const theme = {
     tertiary: '#ECE0E0',
     quaternary: '#F5EFEF',
     white: '#FFFFFF',
-    black: '#999999'
-  },
-  heights: { header: '5.25rem' }
+    black: '#999999',
+    quaternary60: 'rgba(245, 239, 239, 0.6)',
+    border30: 'rgba(255, 255, 255, 0.3)'
+  }
 }
