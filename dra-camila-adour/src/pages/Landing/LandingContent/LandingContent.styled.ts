@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  width: 100%;
-  height: 100%;
+  width: 65%;
   margin-top: 8rem;
-`
-
-export const PresentationContainer = styled.section`
   display: flex;
+  flex-direction: column;
+`
+export const CentralizedSection = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.background};
+  row-gap: 8rem;
 `
 
-export const Image = styled.img``
+export const NormalSection = styled.div`
+  display: flex;
+  margin: 4rem 0;
+`

@@ -10,8 +10,6 @@ export default createGlobalStyle`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
   max-width: 100vw;
   margin: 0;
   padding: 0;
@@ -25,7 +23,6 @@ body {
   font-weight: 400;
   line-height: 1.5rem;
   width: 100%;
-  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
@@ -43,6 +40,7 @@ export const theme = {
     white: '#FFFFFF',
     black: '#999999',
     quaternary60: 'rgba(245, 239, 239, 0.6)',
-    border30: 'rgba(255, 255, 255, 0.3)'
+    border30: 'rgba(255, 255, 255, 0.3)',
+    whatsappGreen: '#27D366'
   }
 }
