@@ -38,7 +38,8 @@ export const theme = {
     tertiary: '#ECE0E0',
     quaternary: '#F5EFEF',
     white: '#FFFFFF',
-    black: '#999999',
+    black: '#000000',
+    gray: '#999999',
     quaternary60: 'rgba(245, 239, 239, 0.6)',
     border30: 'rgba(255, 255, 255, 0.3)',
     whatsappGreen: '#27D366'

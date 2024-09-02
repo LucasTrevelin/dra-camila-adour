@@ -19,6 +19,7 @@ const mapperVariants = {
     width: 19rem;
     background-color: ${({ theme }) => theme.colors.whatsappGreen};
     color: ${({ theme }) => theme.colors.white};
+    z-index: 95;
   `,
   shortIcons: css``
 }

@@ -2,6 +2,7 @@ import { Presentation } from './Presentation'
 import * as S from './LandingContent.styled'
 import { SocialMediaSection } from './SocialMediaSection/SocialMediaSection'
 import { Topic } from '../../../components/Topic'
+import { ArticlesSection } from './ArticlesSection/ArticlesSection'
 
 export const LandingContent: React.FC = () => {
   return (
@@ -11,14 +12,9 @@ export const LandingContent: React.FC = () => {
         <SocialMediaSection />
       </S.CentralizedSection>
       <S.NormalSection>
-        <Topic title='O que eu trato' />
+        <Topic title='Doenças Inflamatórias Intestinais' />
       </S.NormalSection>
-      <S.NormalSection>
-        <Topic title='O que eu trato' />
-      </S.NormalSection>
-      <S.NormalSection>
-        <Topic title='O que eu trato' />
-      </S.NormalSection>
+      <ArticlesSection />
     </S.Container>
   )
 }
