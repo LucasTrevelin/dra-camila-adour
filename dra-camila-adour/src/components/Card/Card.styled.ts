@@ -12,10 +12,13 @@ export const CardTitle = styled(motion.h3)`
   display: flex;
   flex-direction: column;
   padding: 0.1rem 0;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.secondary};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
+  border-top: 1px solid ${({ theme }) => theme.colors.secondary};
 `
 
 export const CardText = styled(motion.p)`
+  text-indent: 1rem;
   font-weight: 400;
   text-align: justify;
   background-color: ${({ theme }) => theme.colors.white};
@@ -24,6 +27,7 @@ export const CardText = styled(motion.p)`
   border-radius: 1.25rem;
   padding: 0 0.8rem;
   color: ${({ theme }) => theme.colors.black};
+  line-height: 26px;
 `
 
 export const CardImage = styled(motion.div)<{ $imageUrl?: string }>`

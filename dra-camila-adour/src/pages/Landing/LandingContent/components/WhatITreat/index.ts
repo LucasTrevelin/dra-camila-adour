@@ -1,0 +1,1 @@
+export { WhatITreat } from './WhatITreat'

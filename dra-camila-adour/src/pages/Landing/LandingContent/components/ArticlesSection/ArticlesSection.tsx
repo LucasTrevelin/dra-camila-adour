@@ -1,4 +1,4 @@
-import { Card } from '../../../../components/Card'
+import { Card } from '../../../../../components/Card'
 import { cardInformationArray } from './ArticlesSection.constant'
 import { Container } from './ArticlesSection.styled'
 

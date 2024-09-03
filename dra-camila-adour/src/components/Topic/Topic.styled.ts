@@ -10,5 +10,5 @@ export const Title = styled.h1`
   display: flex;
   width: 100%;
   align-items: center;
-  margin: 4rem 0 0 1.5rem;
+  margin: 4rem 0 4rem 1.5rem;
 `

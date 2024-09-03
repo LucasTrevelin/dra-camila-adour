@@ -8,6 +8,5 @@ export const Container = styled.section`
   flex-flow: wrap;
   width: 100%;
   row-gap: 4rem;
-  margin-bottom: 8rem;
   z-index: 1;
 `

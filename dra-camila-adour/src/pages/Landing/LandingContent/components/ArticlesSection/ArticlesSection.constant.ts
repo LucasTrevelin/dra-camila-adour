@@ -1,4 +1,4 @@
-import { TCardProps } from '../../../../components/Card/Card.types'
+import { TCardProps } from '../../../../../components/Card/Card.types'
 
 export const cardInformationArray: TCardProps[] = [
   {

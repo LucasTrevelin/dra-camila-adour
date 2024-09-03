@@ -14,6 +14,7 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   text-align: center;
+  color: ${({ theme }) => theme.colors.black}
 }
 
 html,
