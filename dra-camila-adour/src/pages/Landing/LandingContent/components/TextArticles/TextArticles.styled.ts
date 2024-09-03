@@ -8,6 +8,6 @@ export const Title = styled.h3`
 export const FormattedText = styled.pre`
   text-align: justify;
   line-height: 2.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
 `
