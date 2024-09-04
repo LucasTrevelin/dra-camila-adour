@@ -14,8 +14,8 @@ const mapperVariants = {
   `,
   help: css`
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 3.125rem;
+    right: 3.125rem;
     width: 19rem;
     background-color: ${({ theme }) => theme.colors.whatsappGreen};
     color: ${({ theme }) => theme.colors.white};
@@ -26,7 +26,7 @@ const mapperVariants = {
 
 export const Button = styled.button<TButtonVariants>`
   ${({ $variant }) => mapperVariants[$variant]}
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2), 0 0.375rem 1.25rem 0 rgba(0,0,0,0.19);
   font-weight: 600;
   border-radius: 1.875rem;
   white-space: nowrap;

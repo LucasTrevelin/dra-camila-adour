@@ -3,6 +3,7 @@ import { Topic } from '../../../components/Topic'
 import { ArticlesSection } from './components/ArticlesSection/ArticlesSection'
 import { WhatITreat } from './components/WhatITreat'
 import { Home } from './components/Home'
+import { StyledTextBox } from './components/StyledTextBox/StyledTextBox'
 
 export const LandingContent: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ export const LandingContent: React.FC = () => {
       <S.RegularTitleSection>
         <Topic title='Sobre a gastroenterologia' />
       </S.RegularTitleSection>
+      <StyledTextBox />
       <S.RegularTitleSection>
         <Topic title='Sobre a Dra. Camila Adour' />
       </S.RegularTitleSection>
