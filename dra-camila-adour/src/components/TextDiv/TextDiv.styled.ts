@@ -1,17 +1,19 @@
-import { CSSProperties } from 'react'
 import styled from 'styled-components'
+import { TBoxProps } from './TextDiv.types'
 
-export const Box = styled.div<{
-  $borderRadius?: CSSProperties['borderRadius']
-}>`
+export const Box = styled.div<TBoxProps>`
   border-radius: ${({ $borderRadius }) => $borderRadius};
   background-color: ${({ theme }) => theme.colors.white};
   white-space: nowrap;
   overflow-wrap: break-word;
   z-index: 4;
   position: relative;
+  padding: 0.5rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2),
     0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+  border: ${({ hasBorder, theme }) =>
+    hasBorder && `2px solid ${theme.colors.black}`};
+
   & > pre {
     white-space: pre-wrap;
     word-wrap: break-word; /* For older browsers */
@@ -19,6 +21,21 @@ export const Box = styled.div<{
   }
 `
 
+export const WaterMarkContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+`
+
+export const WaterMark = styled.img`
+  aspect-ratio: 1/1;
+  width: 20rem;
+`
+
 export const Content = styled.p`
-  z-index: 5;
+  z-index: 10;
 `

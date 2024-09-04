@@ -4,6 +4,7 @@ import { ArticlesSection } from './components/ArticlesSection/ArticlesSection'
 import { WhatITreat } from './components/WhatITreat'
 import { Home } from './components/Home'
 import { StyledTextBox } from './components/StyledTextBox/StyledTextBox'
+import { About } from './components/About'
 
 export const LandingContent: React.FC = () => {
   return (
@@ -23,6 +24,10 @@ export const LandingContent: React.FC = () => {
       <StyledTextBox />
       <S.RegularTitleSection>
         <Topic title='Sobre a Dra. Camila Adour' />
+      </S.RegularTitleSection>
+      <About />
+      <S.RegularTitleSection>
+        <Topic title='Contato' />
       </S.RegularTitleSection>
     </S.Container>
   )

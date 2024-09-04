@@ -44,8 +44,8 @@ export const TextContent = styled.p`
   padding: 1rem 2rem;
 `
 
-export const Emphasize = styled.span`
-  font-size: 1.25rem;
+export const Emphasize = styled.span<{ $hasBiggerFont?: boolean }>`
+  font-size: ${({ $hasBiggerFont }) => $hasBiggerFont && '1.25rem'};
   color: ${({ theme }) => theme.colors.secondary};
   margin: 0;
 `

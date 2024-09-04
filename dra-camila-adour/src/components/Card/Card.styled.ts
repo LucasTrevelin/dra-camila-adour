@@ -58,12 +58,14 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.gray};
   font-weight: 600;
   border: none;
+  height: 100%;
   width: 100%;
-  border-radius: 0 0 0.3rem 0.3rem;
+  border-radius: 0 0 1.25rem 1.25rem;
   cursor: pointer;
-  margin-top: 0.3rem;
+  margin-top: 0.8rem;
+  padding: 0.5rem;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(110%);
     transition: filter background-color 0.8ms ease-in-out;
   }
 `
