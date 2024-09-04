@@ -4,14 +4,14 @@ import { TSpecialLinksProps } from './Link.types'
 const specialLinkContainer = css<TSpecialLinksProps>`
   box-shadow: ${({ $variant }) =>
     $variant &&
-    '0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
+    '0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)'};
   border-radius: ${({ $variant }) => $variant && '1.875rem'};
   border: ${({ $variant, theme }) =>
     $variant === 'invertedFilled' && `1px solid ${theme.colors.primary}`};
   padding: ${({ $variant }) => $variant && '0.8rem 1.2rem'};
   background-color: ${({ $variant, theme }) => {
     if ($variant === 'normalFilled') return theme.colors.secondary
-    if ($variant === 'invertedFilled') return theme.colors.quaternary
+    if ($variant === 'invertedFilled') return theme.colors.white
   }};
   margin: ${({ $variant }) => $variant && '0 0.8rem'};
   & > a {

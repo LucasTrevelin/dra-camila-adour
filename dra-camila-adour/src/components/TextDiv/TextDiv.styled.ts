@@ -13,12 +13,9 @@ export const Box = styled.div<TBoxProps>`
     0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
   border: ${({ hasBorder, theme }) =>
     hasBorder && `2px solid ${theme.colors.black}`};
-
-  & > pre {
-    white-space: pre-wrap;
-    word-wrap: break-word; /* For older browsers */
-    overflow-wrap: break-word; /* Modern equivalent */
-  }
+  white-space: pre-wrap;
+  word-wrap: break-word; /* For older browsers */
+  overflow-wrap: break-word; /* Modern equivalent */
 `
 
 export const WaterMarkContainer = styled.div`

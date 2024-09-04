@@ -5,6 +5,7 @@ import { WhatITreat } from './components/WhatITreat'
 import { Home } from './components/Home'
 import { StyledTextBox } from './components/StyledTextBox/StyledTextBox'
 import { About } from './components/About'
+import { ContactSection } from './components/ContactSection'
 
 export const LandingContent: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ export const LandingContent: React.FC = () => {
       <S.RegularTitleSection>
         <Topic title='Contato' />
       </S.RegularTitleSection>
+      <ContactSection />
     </S.Container>
   )
 }
