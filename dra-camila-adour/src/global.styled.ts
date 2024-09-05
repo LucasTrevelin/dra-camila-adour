@@ -43,6 +43,8 @@ export const theme = {
     gray: '#999999',
     quaternary60: 'rgba(245, 239, 239, 0.6)',
     border30: 'rgba(255, 255, 255, 0.3)',
-    whatsappGreen: '#27D366'
+    whatsappGreen: '#27D366',
+    instagramBackground:
+      'linear-gradient(35deg, #F9CE34 0%, #EE2A7B 60%, #6228D7 100%)'
   }
 }

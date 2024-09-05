@@ -22,7 +22,22 @@ const mapperVariants = {
     color: ${({ theme }) => theme.colors.white};
     z-index: 10;
   `,
-  shortIcons: css``
+  shortIcons: css<TButtonVariants>`
+    aspect-ratio: 1/1;
+    height: 4rem;
+    background: ${({ theme, $iconTheme }) =>
+      $iconTheme === 'whatsapp'
+        ? theme.colors.whatsappGreen
+        : theme.colors.instagramBackground};
+    color: ${({ theme, $iconTheme }) => $iconTheme && theme.colors.white};
+    outline: none;
+    border: none;
+
+    & > img {
+      aspect-ratio: 1/1;
+      width: 3rem;
+    }
+  `
 }
 
 export const Button = styled.button<TButtonVariants>`

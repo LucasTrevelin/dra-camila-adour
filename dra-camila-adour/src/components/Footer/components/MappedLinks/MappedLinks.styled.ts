@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const LinksWrapper = styled.nav`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100%;
-  column-gap: 1.5rem;
+  row-gap: 1rem;
   text-align: center;
   :hover {
     transition: all 0.3s ease-in-out;
