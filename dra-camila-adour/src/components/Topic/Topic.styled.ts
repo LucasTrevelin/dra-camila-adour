@@ -10,5 +10,6 @@ export const Title = styled.h1`
   display: flex;
   width: 100%;
   align-items: center;
-  margin: 4rem 0 4rem 1.5rem;
+  margin: 2rem 0 0 0;
+  line-height: 40px;
 `

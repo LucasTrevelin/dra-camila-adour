@@ -17,30 +17,19 @@ export const FormattedText = styled.p`
   word-wrap: break-word; /* For older browsers */
   overflow-wrap: break-word; /* Modern equivalent */
   text-align: justify;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 0;
   margin: 0;
   ul {
     list-style: none; /* Remove default bullets for all levels */
   }
 
   li {
-    position: relative;
-    padding-left: 20px; /* Adjust based on bullet size */
-  }
-
-  li::before {
-    content: '▶'; /* Use any character or emoji */
-    color: ${({ theme }) => theme.colors.primary};
-    font-size: 16px; /* Custom size */
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  /* Ensure the style applies to all nested levels */
-  ul ul li::before {
-    content: '●'; /* Different bullet for nested levels */
-    color: #e74c3c; /* Different color for nested levels */
-    font-size: 16px; /* Different size for nested levels */
+    line-height: 40px; /* Set consistent line height */
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+    & > svg {
+      padding-top: 0.8rem;
+    }
   }
 `

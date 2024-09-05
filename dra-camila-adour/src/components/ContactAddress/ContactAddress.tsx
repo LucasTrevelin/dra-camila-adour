@@ -3,5 +3,9 @@ import * as S from './ContactAddress.styled'
 import { TContactAddressProps } from './ContactAddress.types'
 
 export const ContactAddress: React.FC<TContactAddressProps> = ({ variant }) => {
-  return <S.Container $variant={variant}>{ContentBody[variant]}</S.Container>
+  return variant === 'contact' ? (
+    <S.CardContainer>{ContentBody[variant]}</S.CardContainer>
+  ) : (
+    <S.AddressContainer>{ContentBody[variant]}</S.AddressContainer>
+  )
 }

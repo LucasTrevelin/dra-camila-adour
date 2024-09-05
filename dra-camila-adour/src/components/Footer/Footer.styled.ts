@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.footer`
+  margin-top: 4rem;
   padding: 2rem;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.secondary};

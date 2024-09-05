@@ -1,10 +1,14 @@
 import styled from 'styled-components'
 
 export const ContactSection = styled.section`
+  min-height: 100%;
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8rem;
+  row-gap: 2rem;
+  height: 17.7rem;
+  flex: 1;
 `

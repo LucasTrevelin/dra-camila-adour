@@ -3,6 +3,7 @@ import * as S from './ContactAddress.styled'
 import { TContactAddressProps } from './ContactAddress.types'
 import { Mail, MapPinHouse, Phone } from 'lucide-react'
 import { theme } from '../../global.styled'
+import { Divider } from '../Divider'
 
 export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
   contact: (
@@ -42,8 +43,7 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
           <strong>Rua:</strong> Avenida Visconde de Pirajá, 595
           <br />
           <strong>Complemento:</strong> Sala 605
-        </S.TextParagraph>
-        <S.TextParagraph>
+          <br />
           <strong>Bairro:</strong> Ipanema
           <br />
           <strong>Rio de Janeiro - RJ</strong>

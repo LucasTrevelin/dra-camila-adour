@@ -17,8 +17,7 @@ export const SubtopicContainer = styled.article`
   align-items: center;
 `
 export const TextContent = styled.div<{ $maxWidth?: string }>`
-  line-height: 26px;
-  text-indent: 1rem;
+  line-height: 30px;
   max-width: ${({ $maxWidth }) => $maxWidth};
   word-break: normal;
   white-space: pre-wrap;
@@ -26,6 +25,20 @@ export const TextContent = styled.div<{ $maxWidth?: string }>`
   overflow-wrap: break-word; /* Modern equivalent */
   text-align: justify;
   padding: 1rem 2rem;
+
+  ul {
+    list-style: none;
+  }
+  li {
+    line-height: 30px; /* Set consistent line height */
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+    text-align: start;
+    & > svg {
+      padding-top: 0.3rem;
+    }
+  }
 `
 
 export const SubtopicTitle = styled.h3`

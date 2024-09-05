@@ -1,3 +1,4 @@
+import { BulletTopic } from '../../../../../components/StyledBullet'
 import { TextDiv } from '../../../../../components/TextDiv'
 import { Emphasize } from '../StyledTextBox/StyledTextBox.styled'
 import * as S from './About.styled'
@@ -59,31 +60,29 @@ export const About: React.FC = () => {
             <S.TextContent>
               <S.SubtopicTitle>Atualmente atua:</S.SubtopicTitle>
               <ul>
-                <li>
-                  Consultório particular de de Doenças inflamatórias Intestinais
-                  e Gastroenterologia em Ipanema.
-                </li>
-                <li>
-                  Médica da equipe de Gastroenterologia e das Doenças
-                  Inflamatórias Intestinais do Hospital Glória Dor.
-                </li>
-                <li>
-                  Médica da equipe de Gastroenterologia da Clínica São Vicente
-                  da Gávea.
-                </li>
-                <li>
-                  Médica responsável pelo ambulatório de Doenças Inflamatórias
-                  Intestinais do Hospital Federal do Andaraí.
-                </li>
-                <li>
-                  Coordenadora Médica da área de Infusão de drogas Imunomediadas
-                  da Oncoclínicas das unidades Botafogo e Hospital Marcos
-                  Moraes.
-                </li>
-                <li>
-                  Médica responsável pelo ambulatório de Doenças Inflamatórias
-                  Intestinais do Hospital Federal do Andaraí.
-                </li>
+                {BulletTopic(
+                  'Consultório particular de de Doenças inflamatórias Intestinais e Gastroenterologia em Ipanema.'
+                )}
+
+                {BulletTopic(
+                  ' Médica da equipe de Gastroenterologia e das Doenças Inflamatórias Intestinais do Hospital Glória Dor.'
+                )}
+
+                {BulletTopic(
+                  'Médica da equipe de Gastroenterologia da Clínica São Vicente da Gávea.'
+                )}
+
+                {BulletTopic(
+                  'Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
+                )}
+
+                {BulletTopic(
+                  'Coordenadora Médica da área de Infusão de drogas Imunomediadas da Oncoclínicas das unidades Botafogo e Hospital Marcos Moraes.'
+                )}
+
+                {BulletTopic(
+                  ' Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
+                )}
               </ul>
             </S.TextContent>
           </S.SubtopicContainer>
