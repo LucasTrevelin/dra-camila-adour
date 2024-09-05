@@ -3,6 +3,7 @@ import { Container } from './Landing.styled'
 import { Header } from '../../components/Header/Header'
 import { LandingContent } from './LandingContent/LandingContent'
 import { HelpButton } from '../../components/HelpButton'
+import { Footer } from '../../components/Footer'
 
 export const Landing: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ export const Landing: React.FC = () => {
       <Header />
       <HelpButton />
       <LandingContent />
+      <Footer />
     </Container>
   )
 }
