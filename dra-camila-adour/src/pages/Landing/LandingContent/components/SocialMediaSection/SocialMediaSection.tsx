@@ -24,7 +24,10 @@ export const SocialMediaSection: React.FC = () => {
           </S.ButtonContent>
         </Button>
       </S.Link>
-      <S.Link>
+      <S.Link
+        target='_blank'
+        href='https://www.instagram.com/dracamilaadour?igsh=MTV3YTJxZXpsejdmcw=='
+      >
         <Button variant={'socialMedia'}>
           <S.ButtonContent>
             <img src='/assets/icons/instagram-icon.svg' alt='instagram-icon' />
