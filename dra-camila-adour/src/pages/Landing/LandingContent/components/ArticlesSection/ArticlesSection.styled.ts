@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const Container = styled(motion.section)`
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -9,4 +10,7 @@ export const Container = styled.section`
   width: 100%;
   row-gap: 4rem;
   z-index: 1;
+
+  padding-top: 15.625rem;
+  margin-top: -15.625rem;
 `

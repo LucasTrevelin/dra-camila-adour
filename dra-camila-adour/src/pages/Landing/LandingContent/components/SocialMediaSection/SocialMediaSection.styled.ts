@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const ButtonsContainer = styled.section`
+export const ButtonsContainer = styled(motion.section)`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,4 +18,9 @@ export const ButtonContent = styled.div`
   padding: 0 3rem;
   text-align: center;
   column-gap: 1rem;
+`
+
+export const Link = styled.a`
+  color: inherit;
+  text-decoration: none;
 `

@@ -1,14 +1,18 @@
 import styled from 'styled-components'
 import { TDecorativeBoxCoordinates } from './StyledTextBox.types'
+import { motion } from 'framer-motion'
 
 export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  padding-top: 15.625rem;
+  margin-top: -15.625rem;
 `
 
-export const AuxContainer = styled.div`
+export const AuxContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +23,7 @@ export const AuxContainer = styled.div`
   z-index: 4;
 `
 
-export const DecorativeBox = styled.div<TDecorativeBoxCoordinates>`
+export const DecorativeBox = styled(motion.div)<TDecorativeBoxCoordinates>`
   width: 14rem;
   aspect-ratio: 1.5/1;
   background-color: ${({ theme }) => theme.colors.primary};

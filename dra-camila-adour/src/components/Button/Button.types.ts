@@ -11,4 +11,5 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export type TButtonVariants = {
   $variant: 'socialMedia' | 'help' | 'shortIcons'
   $iconTheme?: 'whatsapp' | 'instagram'
+  $isHidden?: boolean
 }

@@ -6,28 +6,55 @@ import { Home } from './components/Home'
 import { StyledTextBox } from './components/StyledTextBox/StyledTextBox'
 import { About } from './components/About'
 import { ContactSection } from './components/ContactSection'
+import { useRef } from 'react'
 
 export const LandingContent: React.FC = () => {
+  const scrollRef = useRef(null)
   return (
     <S.Container>
       <Home />
-      <S.RegularTitleSection>
+      <S.RegularTitleSection
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ ease: 'linear', delay: 0.6 }}
+      >
         <Topic title='O que eu trato' />
       </S.RegularTitleSection>
       <WhatITreat />
-      <S.RegularTitleSection>
+      <S.RegularTitleSection
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ ease: 'easeInOut', delay: 0.6 }}
+      >
         <Topic title='Doenças Inflamatórias Intestinais' />
       </S.RegularTitleSection>
       <ArticlesSection />
-      <S.RegularTitleSection>
+      <S.RegularTitleSection
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ delay: 0.6 }}
+      >
         <Topic title='Sobre a gastroenterologia' />
       </S.RegularTitleSection>
       <StyledTextBox />
-      <S.RegularTitleSection>
+      <S.RegularTitleSection
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ delay: 0.6 }}
+      >
         <Topic title='Sobre a Dra. Camila Adour' />
       </S.RegularTitleSection>
       <About />
-      <S.RegularTitleSection>
+      <S.RegularTitleSection
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ delay: 0.6 }}
+      >
         <Topic title='Contato' />
       </S.RegularTitleSection>
       <ContactSection />

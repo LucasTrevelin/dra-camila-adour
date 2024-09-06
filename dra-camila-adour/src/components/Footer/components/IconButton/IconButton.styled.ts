@@ -5,3 +5,7 @@ export const Container = styled.div`
   height: 4.2rem;
   background-color: ${({ theme }) => theme.colors.background};
 `
+export const Link = styled.a`
+  color: inherit;
+  text-decoration: none;
+`

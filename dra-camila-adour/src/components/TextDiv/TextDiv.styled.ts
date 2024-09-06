@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { TBoxProps } from './TextDiv.types'
+import { motion } from 'framer-motion'
 
-export const Box = styled.div<TBoxProps>`
+export const Box = styled(motion.div)<TBoxProps>`
   border-radius: ${({ $borderRadius }) => $borderRadius};
   background-color: ${({ theme }) => theme.colors.white};
   white-space: nowrap;

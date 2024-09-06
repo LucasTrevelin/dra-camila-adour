@@ -6,6 +6,7 @@ export type TTextArea = {
   children: ReactNode
   hasWaterMark?: boolean
   hasBorder?: boolean
+  hasAnimation?: boolean
 }
 
 export type TBoxProps = {

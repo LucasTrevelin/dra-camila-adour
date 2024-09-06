@@ -11,4 +11,7 @@ export const ContactSection = styled.section`
   row-gap: 2rem;
   height: 17.7rem;
   flex: 1;
+
+  padding-top: 15.625rem;
+  margin-top: -15.625rem;
 `

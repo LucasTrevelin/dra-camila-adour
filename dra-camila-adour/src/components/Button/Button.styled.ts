@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { TButtonVariants } from './Button.types'
+import { motion } from 'framer-motion'
 
 const mapperVariants = {
   socialMedia: css<TButtonVariants>`
@@ -40,7 +41,7 @@ const mapperVariants = {
   `
 }
 
-export const Button = styled.button<TButtonVariants>`
+export const Button = styled(motion.button)<TButtonVariants>`
   ${({ $variant }) => mapperVariants[$variant]}
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-weight: 600;

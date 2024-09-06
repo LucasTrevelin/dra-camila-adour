@@ -13,7 +13,6 @@ export const Container = styled.header`
   overflow-x: hidden;
   height: 5.25rem;
   ${glassEffect}
-  color: black;
   position: fixed;
   display: flex;
   align-items: center;

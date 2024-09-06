@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Container = styled.main`
@@ -8,7 +9,7 @@ export const Container = styled.main`
   flex-direction: column;
 `
 
-export const RegularTitleSection = styled.div`
+export const RegularTitleSection = styled(motion.div)`
   display: flex;
   flex-direction: column;
   margin: 4rem 0;

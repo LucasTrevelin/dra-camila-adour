@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const Container = styled(motion.section)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +9,7 @@ export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.background};
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   width: 50%;
   aspect-ratio: 1.6/1;
 `

@@ -8,7 +8,18 @@ export const Button: React.FC<IButtonProps> = ({
   iconTheme
 }) => {
   return (
-    <S.Button $variant={variant} $iconTheme={iconTheme} title={title}>
+    <S.Button
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+      }}
+      initial={variant === 'help' && 'hidden'}
+      animate={variant === 'help' && 'visible'}
+      transition={{ ease: 'linear', delay: 0.5 }}
+      $variant={variant}
+      $iconTheme={iconTheme}
+      title={title}
+    >
       {children}
     </S.Button>
   )

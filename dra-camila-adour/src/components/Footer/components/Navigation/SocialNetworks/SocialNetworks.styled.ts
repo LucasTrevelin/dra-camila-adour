@@ -4,11 +4,11 @@ export const Container = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: space-between;
+  justify-content: space-between;
+  align-items: center;
   color: ${({ theme }) => theme.colors.white};
-  flex: 1;
   padding-right: 8rem;
+  flex: 1;
 `
 
 export const IconContainers = styled.nav`

@@ -1,16 +1,27 @@
+import { useRef } from 'react'
 import { TextDiv } from '../../../../../components/TextDiv'
 import { theme } from '../../../../../global.styled'
 import * as S from './StyledTextBox.styled'
 
 export const StyledTextBox: React.FC = () => {
+  const scrollRef = useRef(null)
   return (
-    <S.Container>
-      <S.AuxContainer>
+    <S.Container id='Sobre a gastroenterologia'>
+      <S.AuxContainer
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef, once: true }}
+        transition={{ ease: 'linear', delay: 1.5 }}
+      >
         <S.DecorativeBox
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.3 }}
           $coordinates={{ $top: '-1.5rem', $left: '-1.5rem' }}
           $backgroundColor={theme.colors.primary}
         />
-        <TextDiv borderRadius={'0.625rem'} hasWaterMark={true}>
+        <TextDiv borderRadius={'0.625rem'} hasWaterMark={true} hasAnimation>
           <S.TextContent>
             O médico{' '}
             <S.Emphasize $hasBiggerFont={true}>gastroenterologista</S.Emphasize>{' '}
@@ -34,6 +45,10 @@ export const StyledTextBox: React.FC = () => {
           </S.TextContent>
         </TextDiv>
         <S.DecorativeBox
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ root: scrollRef, once: true }}
+          transition={{ ease: 'linear', delay: 0.3 }}
           $coordinates={{ $bottom: '-1.5rem', $right: '-1.5rem' }}
           $backgroundColor={theme.colors.secondary}
         />

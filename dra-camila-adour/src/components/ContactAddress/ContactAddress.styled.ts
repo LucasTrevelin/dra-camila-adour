@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const CardContainer = styled.article`
+export const CardContainer = styled(motion.article)`
   background-color: ${({ theme }) => theme.colors.white};
   aspect-ratio: 2 / 1;
   width: fit-content;
@@ -23,7 +24,7 @@ export const ContactCardContainer = styled.div`
   flex-wrap: wrap;
 `
 
-export const AddressContainer = styled.div`
+export const AddressContainer = styled(motion.article)`
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -13,10 +13,15 @@ const specialLinkContainer = css<TSpecialLinksProps>`
     if ($variant === 'normalFilled') return theme.colors.secondary
     if ($variant === 'invertedFilled') return theme.colors.white
   }};
+  text-decoration: none;
   margin: ${({ $variant }) => $variant && '0 0.8rem'};
   & > a {
     color: ${({ $variant, theme }) =>
       $variant === 'normalFilled' && theme.colors.white};
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 `
 
@@ -25,7 +30,6 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
   display: flex;
   align-items: center;
   display: center;
-  color: black;
   height: ${({ $variant }) => !$variant && '100%'};
   :hover {
     cursor: pointer;
@@ -34,6 +38,13 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
 
 export const NavLink = styled.a`
   padding: 0 0.5rem;
-  color: black;
   white-space: nowrap;
+  scroll-behavior: smooth;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
 `

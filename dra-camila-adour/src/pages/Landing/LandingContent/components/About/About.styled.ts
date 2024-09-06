@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Centralizer = styled.div`
@@ -5,6 +6,9 @@ export const Centralizer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* to make a margin when it is anchored by the link */
+  padding-top: 15.625rem;
+  margin-top: -15.625rem;
 `
 
 export const ArticleSection = styled.section`
@@ -46,7 +50,7 @@ export const SubtopicTitle = styled.h3`
   text-indent: 0%;
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   aspect-ratio: 0.91/1;
   width: 430px;
 `

@@ -15,4 +15,11 @@ export const LinkContainer = styled.div`
 export const NavLink = styled.a`
   padding: 0 0.5rem;
   white-space: nowrap;
+  scroll-behavior: smooth;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 `

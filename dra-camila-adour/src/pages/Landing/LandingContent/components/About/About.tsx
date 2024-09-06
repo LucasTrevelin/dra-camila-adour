@@ -1,11 +1,13 @@
+import { useRef } from 'react'
 import { BulletTopic } from '../../../../../components/StyledBullet'
 import { TextDiv } from '../../../../../components/TextDiv'
 import { Emphasize } from '../StyledTextBox/StyledTextBox.styled'
 import * as S from './About.styled'
 
 export const About: React.FC = () => {
+  const scrollRef = useRef(null)
   return (
-    <S.Centralizer>
+    <S.Centralizer id='Sobre a Dra. Camila Adour'>
       <S.ArticleSection>
         <TextDiv borderRadius={'0.625rem'} hasBorder={true}>
           <S.SubtopicContainer>
@@ -34,6 +36,10 @@ export const About: React.FC = () => {
               lactação.
             </S.TextContent>
             <S.Image
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ root: scrollRef, once: true }}
+              transition={{ ease: 'linear', delay: 0.5 }}
               src='/assets/images/picture-about-camila.jpg'
               alt='picture-camila-with-name-and-crm'
             />

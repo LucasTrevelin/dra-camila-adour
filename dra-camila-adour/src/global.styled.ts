@@ -28,6 +28,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }`
 
 //Global colors
