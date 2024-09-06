@@ -22,5 +22,7 @@ export const Container = styled.header`
 `
 
 export const Image = styled.img`
-  margin-left: 3rem;
+  aspect-ratio: 5.6/1;
+  width: 210px;
+  margin-left: 2rem;
 `
