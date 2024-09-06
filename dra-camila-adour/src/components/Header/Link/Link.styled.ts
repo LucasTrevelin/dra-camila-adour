@@ -42,6 +42,7 @@ export const NavLink = styled.a`
   scroll-behavior: smooth;
   color: inherit;
   text-decoration: none;
+  font-size: 14px;
 
   &:hover {
     text-decoration: underline;

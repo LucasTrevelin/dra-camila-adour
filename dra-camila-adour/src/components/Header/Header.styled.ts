@@ -17,7 +17,8 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
+  flex: 1;
+  z-index: 30;
 `
 
 export const Image = styled.img`

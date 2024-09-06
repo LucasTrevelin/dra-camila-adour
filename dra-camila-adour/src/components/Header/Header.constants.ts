@@ -5,5 +5,6 @@ export const headerLinks: TLinkProps[] = [
   { title: 'Sobre a Dra. Camila Adour', variant: 'invertedFilled' },
   { title: 'Home' },
   { title: 'O que eu trato' },
+  { title: 'Doenças Inflamatórias Intestinais' },
   { title: 'Sobre a gastroenterologia' }
 ]
