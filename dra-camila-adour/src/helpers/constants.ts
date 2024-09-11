@@ -7,8 +7,6 @@ export const mappedLinksHelper = [
   { title: 'Contato' }
 ]
 
-export const encodedHelpMessage = encodeURIComponent('Olá, poderia me ajudar?')
-
-export const makeAppointment = encodeURIComponent(
-  'Olá, gostaria de marcar uma consulta!'
+export const encodedHelpMessage = encodeURIComponent(
+  'Olá, tudo bem? Estou vindo através do site e gostaria de agendar uma consulta com a Dra. Camila Adour!'
 )

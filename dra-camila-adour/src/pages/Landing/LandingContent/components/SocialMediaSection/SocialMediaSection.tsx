@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Button } from '../../../../../components/Button'
 import * as S from './SocialMediaSection.styled'
-import { makeAppointment } from '../../../../../helpers/constants'
+import { encodedHelpMessage } from '../../../../../helpers/constants'
 
 export const SocialMediaSection: React.FC = () => {
   const scrollRef = useRef(null)
@@ -15,7 +15,7 @@ export const SocialMediaSection: React.FC = () => {
     >
       <S.Link
         target='_blank'
-        href={`https://wa.me/+5521976162422?text=${makeAppointment}`}
+        href={`https://wa.me/+5521976162422?text=${encodedHelpMessage}`}
       >
         <Button variant={'socialMedia'} iconTheme='whatsapp'>
           <S.ButtonContent>
