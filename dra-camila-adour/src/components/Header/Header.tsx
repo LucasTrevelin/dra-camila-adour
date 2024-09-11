@@ -4,11 +4,13 @@ import { MappedLinks } from './MappedLinks/MappedLinks'
 export const Header: React.FC = () => {
   return (
     <S.Container>
-      <S.Image
-        src='/assets/images/only-name-header-image.svg'
-        alt='logo-header'
-      />
-      <MappedLinks mappedLinks={headerLinks} />
+      <S.ImageContainer>
+        <S.Image
+          src='/assets/images/logo-header-transparent.png'
+          alt='logo-header'
+        />
+        <MappedLinks mappedLinks={headerLinks} />
+      </S.ImageContainer>
     </S.Container>
   )
 }

@@ -20,6 +20,12 @@ export const ButtonContent = styled.div`
   column-gap: 1rem;
 `
 
+export const SVG = styled.svg`
+  width: 1.81rem;
+  aspect-ratio: 1/1;
+  stroke-width: 30px;
+`
+
 export const Link = styled.a`
   color: inherit;
   text-decoration: none;

@@ -21,8 +21,22 @@ export const Container = styled.header`
   z-index: 30;
 `
 
-export const Image = styled.img`
-  aspect-ratio: 5.6/1;
-  width: 210px;
+export const ImageContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  flex: 1;
   margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+`
+
+export const Image = styled.img`
+  height: 40%;
+  width: 20%;
+  margin-left: 2rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 `
