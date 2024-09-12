@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { devices } from '../../../../../helpers/breakpoints.helpers'
 
 export const Container = styled(motion.section)`
   display: flex;
@@ -13,4 +14,9 @@ export const Container = styled(motion.section)`
 
   padding-top: 15.625rem;
   margin-top: -15.625rem;
+
+  @media screen and (${devices.sm}) {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 `

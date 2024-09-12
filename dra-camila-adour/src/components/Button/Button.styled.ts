@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components'
 import { TButtonVariants } from './Button.types'
 import { motion } from 'framer-motion'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 const mapperVariants = {
   socialMedia: css<TButtonVariants>`
     width: 26rem;
+    @media screen and (${devices.sm}) {
+      width: 20rem;
+    }
     height: 3.3rem;
     border-radius: 1.875rem;
     background-color: ${({ theme, $iconTheme }) =>

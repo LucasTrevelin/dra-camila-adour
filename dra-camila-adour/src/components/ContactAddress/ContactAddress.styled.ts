@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const CardContainer = styled(motion.article)`
   background-color: ${({ theme }) => theme.colors.white};
@@ -15,6 +16,13 @@ export const CardContainer = styled(motion.article)`
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media screen and (${devices.sm}) {
+    row-gap: 0.4rem;
+    padding: 1rem 2rem;
+    line-height: 1rem;
+    font-size: 0.875rem;
+  }
 `
 export const ContactCardContainer = styled.div`
   display: flex;
@@ -35,6 +43,17 @@ export const Image = styled.img`
   aspect-ratio: 7.6/1;
   width: 17.5rem;
   margin-bottom: 1.5rem;
+
+  @media screen and (${devices.sm}) {
+    width: 15rem;
+    margin-bottom: 0.4rem;
+  }
+`
+
+export const InformationParagraph = styled.p`
+  @media screen and (${devices.sm}) {
+    margin: 0.5rem 0;
+  }
 `
 
 export const InfoContainer = styled.div`
@@ -65,7 +84,14 @@ export const TextContainer = styled.div`
 export const TextParagraph = styled.p`
   text-align: justify;
   padding-left: 1.5rem;
+
+  @media screen and (${devices.sm}) {
+    row-gap: 0.4rem;
+    line-height: 2rem;
+    font-size: 0.875rem;
+  }
 `
+
 export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.primary};
   margin: 0;

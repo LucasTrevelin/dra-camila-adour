@@ -9,4 +9,5 @@ export type TSpecialLinksProps = {
 export type TLinkProps = {
   title: string
   variant?: TSpecialLinksProps['$variant']
+  additionalAction?: VoidFunction
 }

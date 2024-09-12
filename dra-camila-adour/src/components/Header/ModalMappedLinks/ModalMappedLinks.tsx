@@ -7,15 +7,28 @@ import { AnimatePresence } from 'framer-motion'
 
 export const ModalMappedLinks: React.FC<TModalMappedLinksProps> = ({
   mappedLinks,
-  isOpen = true
+  isOpen = true,
+  additionalAction
 }) => {
   return (
-    <AnimatePresence>
-      <S.LinksWrapper $isOpen={isOpen} layout transition={{ delay: 0.3 }}>
-        {mappedLinks.map(({ title, variant }) => (
-          <Link key={`link-${title}`} title={title} variant={variant} />
-        ))}
-      </S.LinksWrapper>
+    <AnimatePresence mode='wait'>
+      {isOpen && (
+        <S.LinksWrapper
+          className='dialog'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {mappedLinks.map(({ title, variant }) => (
+            <Link
+              key={`link-${title}`}
+              title={title}
+              variant={variant}
+              additionalAction={additionalAction}
+            />
+          ))}
+        </S.LinksWrapper>
+      )}
     </AnimatePresence>
   )
 }

@@ -9,23 +9,23 @@ export const ContentBody: Record<TContactAddressProps['variant'], ReactNode> = {
     <S.ContactCardContainer>
       <S.Image src='/assets/images/contact-logo.jpg' />
       <S.InfoContainer>
-        <p>
+        <S.InformationParagraph>
           <strong>CRM:</strong> 52.88007-8
-        </p>
-        <p>
+        </S.InformationParagraph>
+        <S.InformationParagraph>
           <strong>RQE:</strong> (23974)
-        </p>
+        </S.InformationParagraph>
       </S.InfoContainer>
       <S.InfoContainer>
         <S.IconTextContainer>
           <Mail size={'20px'} color={theme.colors.primary} />
-          <p>
+          <S.InformationParagraph>
             <em>camilaadour@gmail.com</em>
-          </p>
+          </S.InformationParagraph>
         </S.IconTextContainer>
         <S.IconTextContainer>
           <Phone size={'20px'} color={theme.colors.primary} />
-          <p>(21) 97616-2422</p>
+          <S.InformationParagraph>(21) 97616-2422</S.InformationParagraph>
         </S.IconTextContainer>
       </S.InfoContainer>
     </S.ContactCardContainer>

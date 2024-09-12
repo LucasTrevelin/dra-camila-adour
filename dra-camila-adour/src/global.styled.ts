@@ -24,8 +24,6 @@ body {
   font-weight: 400;
   line-height: 1.5rem;
   width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

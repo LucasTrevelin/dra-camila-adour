@@ -14,11 +14,14 @@ const specialLinkContainer = css<TSpecialLinksProps>`
     '1.875rem'};
   border: ${({ $variant, theme }) =>
     $variant === 'invertedFilled' && `1px solid ${theme.colors.primary}`};
-  padding: ${({ $variant }) =>
-    $variant &&
-    $variant !== 'hamburguer-highlight' &&
-    $variant !== 'hamburguer' &&
-    '0.8rem 1.2rem'};
+  padding: ${({ $variant }) => {
+    if (
+      $variant &&
+      $variant !== 'hamburguer-highlight' &&
+      $variant !== 'hamburguer'
+    )
+      return '0.8rem 1.2rem'
+  }};
   background-color: ${({ $variant, theme }) => {
     if ($variant === 'normalFilled') return theme.colors.secondary
     if ($variant === 'invertedFilled') return theme.colors.white
@@ -33,7 +36,7 @@ const specialLinkContainer = css<TSpecialLinksProps>`
     text-decoration: none;
 
     border-bottom: ${({ $variant, theme }) =>
-      $variant === 'hamburguer-highlight' && `1px solid ${theme.colors.black}`};
+      $variant === 'hamburguer-highlight' && `2px solid ${theme.colors.black}`};
 
     &:hover {
       text-decoration: none;
@@ -53,9 +56,14 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
   }
 `
 
-export const NavLink = styled.a`
-  width: 80%;
-  padding: 0 0.5rem;
+export const NavLink = styled.a<TSpecialLinksProps>`
+  width: ${({ $variant }) =>
+    ($variant === 'hamburguer' || $variant === 'hamburguer-highlight') &&
+    '80%'};
+  padding: ${({ $variant }) =>
+    $variant === 'hamburguer' || $variant === 'hamburguer-highlight'
+      ? '0.5rem'
+      : '0 0.5rem'};
   white-space: nowrap;
   scroll-behavior: smooth;
   color: inherit;

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { TBoxProps } from './TextDiv.types'
 import { motion } from 'framer-motion'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Box = styled(motion.div)<TBoxProps>`
   border-radius: ${({ $borderRadius }) => $borderRadius};
@@ -17,6 +18,10 @@ export const Box = styled(motion.div)<TBoxProps>`
   white-space: pre-wrap;
   word-wrap: break-word; /* For older browsers */
   overflow-wrap: break-word; /* Modern equivalent */
+
+  @media screen and (${devices.sm}) {
+    padding: 0.5rem 0.2rem;
+  }
 `
 
 export const WaterMarkContainer = styled.div`
@@ -32,6 +37,10 @@ export const WaterMarkContainer = styled.div`
 export const WaterMark = styled.img`
   aspect-ratio: 1/1;
   width: 20rem;
+
+  @media screen and (${devices.sm}) {
+    width: 15rem;
+  }
 `
 
 export const Content = styled.p`

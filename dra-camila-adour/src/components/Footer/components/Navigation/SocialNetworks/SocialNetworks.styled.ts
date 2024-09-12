@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../../../../helpers/breakpoints.helpers'
 
 export const Container = styled.section`
   height: 100%;
@@ -9,6 +10,11 @@ export const Container = styled.section`
   color: ${({ theme }) => theme.colors.white};
   padding-right: 8rem;
   flex: 1;
+
+  @media screen and (${devices.sm}) {
+    margin-left: 2rem;
+    padding-right: 0;
+  }
 `
 
 export const IconContainers = styled.nav`

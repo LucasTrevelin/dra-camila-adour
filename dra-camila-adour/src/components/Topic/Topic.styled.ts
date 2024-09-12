@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
@@ -12,4 +13,8 @@ export const Title = styled.h1`
   align-items: center;
   margin: 2rem 0 0 0;
   line-height: 40px;
+
+  @media screen and (${devices.sm}) {
+    font-size: 1.5rem;
+  }
 `

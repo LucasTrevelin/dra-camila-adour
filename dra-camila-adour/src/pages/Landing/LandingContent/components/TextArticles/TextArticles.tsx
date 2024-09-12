@@ -17,13 +17,11 @@ export const TextArticleA = () => {
         {BulletTopic('Síndrome do Intestino irritável;')}
         {BulletTopic('Constipação intestinal;')}
         {BulletTopic(
-          `Doença diverticular Investigação e tratamento de \n diarréias agudas e crônicas;`
+          `Doença diverticular Investigação e tratamento de  diarréias agudas e crônicas;`
         )}
-        <li>
-          {BulletTopic(
-            `Doença diverticular Avaliação pré colonoscopia e interpretação de \n outros exames endoscópicos;`
-          )}
-        </li>
+        {BulletTopic(
+          `Doença diverticular Avaliação pré colonoscopia e interpretação de \n outros exames endoscópicos;`
+        )}
         {BulletTopic('Doença Celíaca;')}
         {BulletTopic('Investigação e tratamento de distensão abdominal; ')}
         {BulletTopic('Investigação e tratamento de dores abdominais;')}
@@ -37,7 +35,7 @@ export const TextArticleB = () => {
   return (
     <S.TextContainer>
       <S.Title>
-        B.&nbsp; Doenças do Esôfago, estômago, fígado e pâncreas:
+        B.&nbsp;Doenças do Esôfago, Estômago, Fígado e Pâncreas:
       </S.Title>
       <S.FormattedText>
         {BulletTopic('Esofagites;')}

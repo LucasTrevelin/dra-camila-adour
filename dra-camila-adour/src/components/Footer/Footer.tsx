@@ -4,7 +4,7 @@ import * as S from './Footer.styled'
 
 export const Footer = () => {
   return (
-    <S.Container>
+    <S.Container id={'footer'}>
       <S.Image src='/assets/images/footer-logo.jpg' alt='footer-logo' />
       <Navigation />
       <SocialNetworks />

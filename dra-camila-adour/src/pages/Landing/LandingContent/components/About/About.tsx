@@ -67,29 +67,30 @@ export const About: React.FC = () => {
               <S.SubtopicTitle>Atualmente atua:</S.SubtopicTitle>
               <ul>
                 {BulletTopic(
-                  'Consultório particular de de Doenças inflamatórias Intestinais e Gastroenterologia em Ipanema.'
+                  'Consultório particular de Doenças inflamatórias Intestinais e Gastroenterologia em Ipanema.'
                 )}
-
+                <br />
                 {BulletTopic(
                   ' Médica da equipe de Gastroenterologia e das Doenças Inflamatórias Intestinais do Hospital Glória Dor.'
                 )}
-
+                <br />
                 {BulletTopic(
                   'Médica da equipe de Gastroenterologia da Clínica São Vicente da Gávea.'
                 )}
-
+                <br />
                 {BulletTopic(
                   'Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
                 )}
-
+                <br />
                 {BulletTopic(
                   'Coordenadora Médica da área de Infusão de drogas Imunomediadas da Oncoclínicas das unidades Botafogo e Hospital Marcos Moraes.'
                 )}
-
+                <br />
                 {BulletTopic(
                   ' Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
                 )}
               </ul>
+              <br />
             </S.TextContent>
           </S.SubtopicContainer>
         </TextDiv>

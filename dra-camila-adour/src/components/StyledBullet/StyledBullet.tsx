@@ -1,24 +1,16 @@
-import { Circle, Play } from 'lucide-react'
 import { theme } from '../../global.styled'
+import { StyledCircle, StyledPlay } from './StyledBullet.styled'
 
 export const BulletTopic = (text: string) => (
   <li>
-    <Play
-      color={theme.colors.primary}
-      size={'16px'}
-      fill={theme.colors.primary}
-    />
+    <StyledPlay color={theme.colors.primary} fill={theme.colors.primary} />
     {text}
   </li>
 )
 
 export const BulletSubTopic = (text: string) => (
   <li>
-    <Circle
-      color={theme.colors.primary}
-      size={'10px'}
-      fill={theme.colors.primary}
-    />
+    <StyledCircle color={theme.colors.primary} fill={theme.colors.primary} />
     {text}
   </li>
 )

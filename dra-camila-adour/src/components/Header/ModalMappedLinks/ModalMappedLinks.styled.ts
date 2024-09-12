@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { devices } from '../../../helpers/breakpoints.helpers'
 import { motion } from 'framer-motion'
 
-export const LinksWrapper = styled(motion.dialog)<{ $isOpen: boolean }>`
+export const LinksWrapper = styled(motion.dialog)`
   && {
     padding: 0.8rem 0;
   }
@@ -14,7 +14,6 @@ export const LinksWrapper = styled(motion.dialog)<{ $isOpen: boolean }>`
   position: fixed;
   top: 3.5rem;
   left: 30%;
-  row-gap: 1rem;
   text-align: center;
   padding: 2rem;
   background-color: ${({ theme }) => theme.colors.background};
@@ -28,6 +27,5 @@ export const LinksWrapper = styled(motion.dialog)<{ $isOpen: boolean }>`
 
   @media screen and (${devices.sm}) {
     display: flex;
-    visibility: ${({ $isOpen }) => !$isOpen && 'hidden'};
   }
 `

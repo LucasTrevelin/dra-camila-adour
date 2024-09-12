@@ -9,6 +9,7 @@ export const Button: React.FC<IButtonProps> = ({
 }) => {
   return (
     <S.Button
+      id={variant}
       variants={{
         hidden: { opacity: 0 },
         visible: { opacity: 1 }

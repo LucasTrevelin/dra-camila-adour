@@ -17,10 +17,14 @@ export const Header: React.FC = () => {
             alt='logo-header'
           />
           <MappedLinks mappedLinks={headerLinks} />
-          <HamburguerMenu onClick={openMenu}></HamburguerMenu>
+          <HamburguerMenu onClick={openMenu} />
         </S.ImageContainer>
       </S.Container>
-      <ModalMappedLinks mappedLinks={headerMenuLinks} isOpen={isMenuOpen} />
+      <ModalMappedLinks
+        mappedLinks={headerMenuLinks}
+        isOpen={isMenuOpen}
+        additionalAction={openMenu}
+      />
     </>
   )
 }
