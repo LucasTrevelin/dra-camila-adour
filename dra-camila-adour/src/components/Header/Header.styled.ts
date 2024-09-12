@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { devices } from '../../helpers/breakpoints.helpers'
 
 const glassEffect = css`
   background: ${({ theme }) => theme.colors.quaternary60};
@@ -31,12 +32,31 @@ export const ImageContainer = styled.div`
   align-items: center;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  @media screen and (${devices.sm}) {
+    justify-content: space-between;
+  }
 `
 
 export const Image = styled.img`
-  height: 40%;
-  width: 20%;
+  aspect-ratio: 8.3/1;
+  width: 250px;
   margin-left: 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+`
+
+export const SmallScreenImage = styled.img`
+  aspect-ratio: 1.18/1;
+  width: 30px;
+  display: none;
+  backdrop-filter: blur(5px);
+  margin-right: 2rem;
+  -webkit-backdrop-filter: blur(5px);
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
+  :hover {
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+  }
 `

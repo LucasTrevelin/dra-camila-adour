@@ -8,3 +8,12 @@ export const headerLinks: TLinkProps[] = [
   { title: 'Doenças Inflamatórias Intestinais' },
   { title: 'Sobre a gastroenterologia' }
 ]
+
+export const headerMenuLinks: TLinkProps[] = [
+  { title: 'Contato', variant: 'hamburguer-highlight' },
+  { title: 'Sobre a Dra. Camila Adour', variant: 'hamburguer' },
+  { title: 'Home', variant: 'hamburguer' },
+  { title: 'O que eu trato', variant: 'hamburguer' },
+  { title: 'Doenças Inflamatórias Intestinais', variant: 'hamburguer' },
+  { title: 'Sobre a gastroenterologia', variant: 'hamburguer' }
+]

@@ -4,11 +4,21 @@ import { TSpecialLinksProps } from './Link.types'
 const specialLinkContainer = css<TSpecialLinksProps>`
   box-shadow: ${({ $variant }) =>
     $variant &&
+    $variant !== 'hamburguer-highlight' &&
+    $variant !== 'hamburguer' &&
     '0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)'};
-  border-radius: ${({ $variant }) => $variant && '1.875rem'};
+  border-radius: ${({ $variant }) =>
+    $variant &&
+    $variant !== 'hamburguer' &&
+    $variant !== 'hamburguer-highlight' &&
+    '1.875rem'};
   border: ${({ $variant, theme }) =>
     $variant === 'invertedFilled' && `1px solid ${theme.colors.primary}`};
-  padding: ${({ $variant }) => $variant && '0.8rem 1.2rem'};
+  padding: ${({ $variant }) =>
+    $variant &&
+    $variant !== 'hamburguer-highlight' &&
+    $variant !== 'hamburguer' &&
+    '0.8rem 1.2rem'};
   background-color: ${({ $variant, theme }) => {
     if ($variant === 'normalFilled') return theme.colors.secondary
     if ($variant === 'invertedFilled') return theme.colors.white
@@ -16,9 +26,15 @@ const specialLinkContainer = css<TSpecialLinksProps>`
   text-decoration: none;
   margin: ${({ $variant }) => $variant && '0 0.8rem'};
   & > a {
-    color: ${({ $variant, theme }) =>
-      $variant === 'normalFilled' && theme.colors.white};
+    color: ${({ $variant, theme }) => {
+      if ($variant === 'normalFilled') return theme.colors.white
+      if ($variant === 'hamburguer-highlight') return theme.colors.primary
+    }};
     text-decoration: none;
+
+    border-bottom: ${({ $variant, theme }) =>
+      $variant === 'hamburguer-highlight' && `1px solid ${theme.colors.black}`};
+
     &:hover {
       text-decoration: none;
     }
@@ -27,9 +43,10 @@ const specialLinkContainer = css<TSpecialLinksProps>`
 
 export const LinkContainer = styled.div<TSpecialLinksProps>`
   ${specialLinkContainer}
+  width: 100%;
   display: flex;
   align-items: center;
-  display: center;
+  justify-content: center;
   height: ${({ $variant }) => !$variant && '100%'};
   :hover {
     cursor: pointer;
@@ -37,6 +54,7 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
 `
 
 export const NavLink = styled.a`
+  width: 80%;
   padding: 0 0.5rem;
   white-space: nowrap;
   scroll-behavior: smooth;

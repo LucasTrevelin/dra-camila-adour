@@ -1,5 +1,9 @@
 export type TSpecialLinksProps = {
-  $variant?: 'normalFilled' | 'invertedFilled'
+  $variant?:
+    | 'normalFilled'
+    | 'invertedFilled'
+    | 'hamburguer-highlight'
+    | 'hamburguer'
 }
 
 export type TLinkProps = {
