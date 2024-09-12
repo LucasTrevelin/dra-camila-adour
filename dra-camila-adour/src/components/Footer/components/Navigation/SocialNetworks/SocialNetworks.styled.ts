@@ -12,7 +12,6 @@ export const Container = styled.section`
   flex: 1;
 
   @media screen and (${devices.sm}) {
-    margin-left: 2rem;
     padding-right: 0;
   }
 `

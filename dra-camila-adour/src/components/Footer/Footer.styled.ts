@@ -25,5 +25,6 @@ export const Image = styled.img`
   margin-left: 2rem;
   @media screen and (${devices.sm}) {
     height: 120px;
+    margin-left: 0;
   }
 `

@@ -14,7 +14,7 @@ export const Centralizer = styled.div`
 export const ArticleSection = styled.section`
   max-width: 80rem;
   @media screen and (${devices.sm}) {
-    max-width: 20rem;
+    max-width: 100%;
   }
 `
 

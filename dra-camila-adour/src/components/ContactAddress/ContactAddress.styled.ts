@@ -96,4 +96,7 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.primary};
   margin: 0;
   padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 `
