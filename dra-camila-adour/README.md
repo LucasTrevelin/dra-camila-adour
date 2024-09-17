@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Dra Camila Adour - Professional Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Leia em Português](README.pt.md)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **WhatsApp Integration**: Clients can easily schedule appointments or get help through WhatsApp.
+- **About Section**: Details about Dr. Camila’s medical background, experience, and locations where she practices.
+- **Gastroenterology Overview**: A summary of Dr. Camila's expertise and information about common diseases she treats.
+- **Contact Information**: Email, telephone, and clinic address provided for professional inquiries.
 
-## Expanding the ESLint configuration
+## Installation Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To set up the project locally:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/your-username/dra-camila-adour.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd dra-camila-adour
 ```
+
+3. Install dependencies:
+
+```bash
+yarn install
+```
+
+4. Run the project locally:
+
+```bash
+yarn dev
+```
+
+The application will be running locally on localhost:5173.
+
+## Technologies Used
+
+- React JS;
+- Vite JS;
+- Typescript;
+- Framer Motion (for animations);
+- Styled-components (for styling);
+- Lucide-icons;
+- ESLint (for code linting);
+
+## Contribution Guidelines
+
+This is a commercial project, so contributions from external developers are not currently accepted.
+
+## License
+
+This project is not licensed for external use.
+
+## Additional Information
+
+- Design: The complete design of the landing page was created in Figma by the developer.
+- Responsive Design: The site has two responsive breakpoints at 640px and 1024px for optimized viewing on different devices.
