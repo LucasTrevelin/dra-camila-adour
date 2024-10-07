@@ -39,7 +39,7 @@ export const WaterMark = styled.img`
   width: 20rem;
 
   @media screen and (${devices.sm}) {
-    width: 15rem;
+    width: 12rem;
   }
 `
 
