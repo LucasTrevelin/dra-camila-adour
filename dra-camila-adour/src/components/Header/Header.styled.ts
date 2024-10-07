@@ -50,7 +50,6 @@ export const SmallScreenImage = styled.img`
   width: 30px;
   display: none;
   backdrop-filter: blur(5px);
-  margin-right: 2rem;
   -webkit-backdrop-filter: blur(5px);
   @media screen and (${devices.sm}) {
     display: flex;

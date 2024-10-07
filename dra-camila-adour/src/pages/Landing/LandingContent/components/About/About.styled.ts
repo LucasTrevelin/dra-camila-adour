@@ -76,9 +76,10 @@ export const SubtopicTitle = styled.h3`
 
 export const Image = styled(motion.img)`
   aspect-ratio: 0.68/1;
-  width: 430px;
+  width: 500px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10;
+  margin-right: 1rem;
   @media screen {
     width: 12rem;
   }

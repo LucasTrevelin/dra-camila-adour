@@ -57,14 +57,16 @@ export const LinkContainer = styled.div<TSpecialLinksProps>`
 `
 
 export const NavLink = styled.a<TSpecialLinksProps>`
+  line-height: 20px;
   width: ${({ $variant }) =>
     ($variant === 'hamburguer' || $variant === 'hamburguer-highlight') &&
     '80%'};
+  max-width: ${({ $variant }) => !$variant && '110px'};
   padding: ${({ $variant }) =>
     $variant === 'hamburguer' || $variant === 'hamburguer-highlight'
       ? '0.5rem'
       : '0 0.5rem'};
-  white-space: nowrap;
+
   scroll-behavior: smooth;
   color: inherit;
   text-decoration: none;
