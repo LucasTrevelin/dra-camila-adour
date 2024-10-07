@@ -18,7 +18,6 @@ export const Image = styled(motion.img)`
     width: 100%;
     display: none;
   }
-  aspect-ratio: 1.6/1;
 `
 
 export const SmallScreenImage = styled(motion.img)`
