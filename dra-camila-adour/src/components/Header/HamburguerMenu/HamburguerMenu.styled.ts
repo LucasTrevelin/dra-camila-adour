@@ -6,21 +6,23 @@ export const Container = styled.button`
   border: 0;
   width: fit-content;
   background-color: inherit;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1.18/1;
-  margin-right: 2rem;
   position: relative;
+  right: 2rem;
+
+  @media screen and (${devices.sm}) {
+    display: flex;
+  }
 `
 
 export const Image = styled.img`
   aspect-ratio: 1.18/1;
   width: 30px;
   display: none;
-  backdrop-filter: blur(5px);
-
-  -webkit-backdrop-filter: blur(5px);
+  border-radius: 3px;
   @media screen and (${devices.sm}) {
     display: flex;
   }

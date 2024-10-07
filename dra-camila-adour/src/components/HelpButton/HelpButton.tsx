@@ -10,7 +10,6 @@ export const HelpButton: React.FC = () => {
         href={`https://wa.me/+5521976162422?text=${encodedHelpMessage}`}
       >
         <Image src='assets/icons/whatsapp-icon.svg' alt='whatsapp-icon' />
-        Olá, como posso ajudá-lo?
       </ButtonContent>
     </Button>
   )
