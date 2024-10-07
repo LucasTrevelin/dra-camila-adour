@@ -12,7 +12,7 @@ export const Presentation: React.FC = () => {
         animate='visible'
         transition={{ ease: 'linear', delay: 0.3 }}
         alt='about-clinic'
-        src='/assets/images/small-presentation-left.png'
+        src='/assets/images/small-presentation-left.jpg'
       />
       <S.SmallScreenImage
         variants={{
@@ -22,7 +22,7 @@ export const Presentation: React.FC = () => {
         initial='hiddenRight'
         animate='visible'
         transition={{ ease: 'linear', delay: 0.3 }}
-        src='/assets/images/small-presentation-right.jpg'
+        src='/assets/images/small-presentation-export.jpg'
         alt='about-clinic'
       />
       <S.Image
