@@ -11,6 +11,7 @@ export const Container = styled(motion.article)`
 export const CardTitle = styled(motion.h3)`
   display: flex;
   flex-direction: column;
+  margin-top: 0;
   padding: 0.1rem 0;
   color: ${({ theme }) => theme.colors.secondary};
   border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
@@ -35,16 +36,12 @@ export const CardImage = styled(motion.div)<{ $imageUrl?: string }>`
   height: 12.5rem;
 
   background: rgb(219, 155, 144);
-  background: linear-gradient(
-    90deg,
-    rgba(219, 155, 144, 1) 0%,
-    rgba(245, 239, 239, 1) 50%,
-    rgba(219, 155, 144, 1) 100%
-  );
+
   background-image: ${({ $imageUrl }) => $imageUrl && `url(${$imageUrl})`};
-  background-size: cover; /* this way */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 1.25rem 1.25rem 0 0;
-  filter: brightness(70%);
 `
 
 export const ButtonContainer = styled(motion.div)`
