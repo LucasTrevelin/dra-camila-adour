@@ -10,7 +10,6 @@ export const Box = styled(motion.div)<TBoxProps>`
   overflow-wrap: break-word;
   z-index: 4;
   position: relative;
-  padding: 0.5rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2),
     0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
   border: ${({ hasBorder, theme }) =>
@@ -18,10 +17,8 @@ export const Box = styled(motion.div)<TBoxProps>`
   white-space: pre-wrap;
   word-wrap: break-word; /* For older browsers */
   overflow-wrap: break-word; /* Modern equivalent */
-
-  @media screen and (${devices.sm}) {
-    padding: 0.5rem 0.2rem;
-  }
+  height: 100%;
+  background-image: ${({ $backgroundImage }) => `url(${$backgroundImage})`};
 `
 
 export const WaterMarkContainer = styled.div`

@@ -7,7 +7,7 @@ import {
 export const TextArticleA = () => {
   return (
     <S.TextContainer>
-      <S.Title>A.&nbsp; Doenças Intestinais</S.Title>
+      <S.Title>Doenças Intestinais</S.Title>
       <S.FormattedText>
         {BulletTopic('Doenças Inflamatórias Intestinais:')}
         <ul>
@@ -34,9 +34,7 @@ export const TextArticleA = () => {
 export const TextArticleB = () => {
   return (
     <S.TextContainer>
-      <S.Title>
-        B.&nbsp;Doenças do Esôfago, Estômago, Fígado e Pâncreas:
-      </S.Title>
+      <S.Title>Doenças do Esôfago, Estômago, Fígado e Pâncreas:</S.Title>
       <S.FormattedText>
         {BulletTopic('Esofagites;')}
         {BulletTopic('Doença do Refluxo gastro esofágico;')}

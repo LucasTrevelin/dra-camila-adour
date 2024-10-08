@@ -20,11 +20,11 @@ export const ArticleSection = styled.section`
 
 export const SubtopicContainer = styled.article`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   @media screen and (${devices.sm}) {
-    flex-direction: column;
   }
 `
 export const TextContent = styled.div<{ $maxWidth?: string }>`
@@ -75,12 +75,12 @@ export const SubtopicTitle = styled.h3`
 `
 
 export const Image = styled(motion.img)`
-  aspect-ratio: 0.68/1;
-  width: 500px;
+  aspect-ratio: 0.83/1;
+  width: 20rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10;
   margin-right: 1rem;
-  @media screen {
+  @media screen and (${devices.sm}) {
     width: 12rem;
   }
 `

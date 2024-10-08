@@ -3,13 +3,28 @@ import { devices } from '../../../../../helpers/breakpoints.helpers'
 
 export const TextContainer = styled.ul`
   list-style: none;
+  position: relative;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: inherit;
+    z-index: -1;
+  }
 `
 
 export const Title = styled.h3`
-  text-align: justify;
+  text-align: left;
   margin: 0.1rem 0;
   text-decoration: underline;
-  padding-right: 2rem;
 
   @media screen and (${devices.sm}) {
     font-size: 0.875rem;

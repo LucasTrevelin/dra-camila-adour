@@ -7,9 +7,11 @@ export type TTextArea = {
   hasWaterMark?: boolean
   hasBorder?: boolean
   hasAnimation?: boolean
+  backgroundImage?: string
 }
 
 export type TBoxProps = {
   $borderRadius?: CSSProperties['borderRadius']
   hasBorder?: boolean
+  $backgroundImage?: string
 }

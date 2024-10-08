@@ -7,7 +7,8 @@ export const TextDiv: React.FC<TTextArea> = ({
   children,
   hasWaterMark,
   hasBorder,
-  hasAnimation
+  hasAnimation,
+  backgroundImage
 }) => {
   const scrollRef = useRef(null)
   return (
@@ -18,6 +19,7 @@ export const TextDiv: React.FC<TTextArea> = ({
       whileInView={{ opacity: 1 }}
       viewport={{ root: hasAnimation ? scrollRef : undefined, once: true }}
       transition={{ ease: 'linear', delay: 1 }}
+      $backgroundImage={backgroundImage}
     >
       <WaterMarkContainer>
         {hasWaterMark && (

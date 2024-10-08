@@ -81,14 +81,6 @@ export const About: React.FC = () => {
                 {BulletTopic(
                   'Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
                 )}
-                <br />
-                {BulletTopic(
-                  'Coordenadora Médica da área de Infusão de drogas Imunomediadas da Oncoclínicas das unidades Botafogo e Hospital Marcos Moraes.'
-                )}
-                <br />
-                {BulletTopic(
-                  ' Médica responsável pelo ambulatório de Doenças Inflamatórias Intestinais do Hospital Federal do Andaraí.'
-                )}
               </ul>
               <br />
             </S.TextContent>
