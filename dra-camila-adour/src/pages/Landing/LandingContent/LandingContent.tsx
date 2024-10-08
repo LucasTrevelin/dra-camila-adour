@@ -2,17 +2,17 @@ import * as S from './LandingContent.styled'
 import { Topic } from '../../../components/Topic'
 import { ArticlesSection } from './components/ArticlesSection/ArticlesSection'
 import { WhatITreat } from './components/WhatITreat'
-import { Home } from './components/Home'
 import { StyledTextBox } from './components/StyledTextBox/StyledTextBox'
 import { About } from './components/About'
 import { ContactSection } from './components/ContactSection'
 import { useRef } from 'react'
+import { SocialMediaSection } from './components/SocialMediaSection/SocialMediaSection'
 
 export const LandingContent: React.FC = () => {
   const scrollRef = useRef(null)
   return (
     <S.Container>
-      <Home />
+      <SocialMediaSection />
       <S.RegularTitleSection
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}

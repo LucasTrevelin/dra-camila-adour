@@ -44,6 +44,7 @@ export const theme = {
     border30: 'rgba(255, 255, 255, 0.3)',
     whatsappGreen: '#27D366',
     instagramBackground:
-      'linear-gradient(35deg, #F9CE34 0%, #EE2A7B 60%, #6228D7 100%)'
+      'linear-gradient(35deg, #F9CE34 0%, #EE2A7B 60%, #6228D7 100%)',
+    borderBottomGradient: 'linear-gradient(180deg, #DB9B90 0%, #EFE3E5 100%)'
   }
 }
